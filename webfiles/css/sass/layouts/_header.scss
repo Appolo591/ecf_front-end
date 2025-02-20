@@ -24,3 +24,25 @@ header{
     }
 
 }
+
+
+@media screen and (max-width :1024px){
+    header{
+        background-color: aquamarine;
+    }
+}
+@media screen and (max-width :768px){
+    header{
+        background-color: rgb(12, 74, 53);
+    }
+}
+@media screen and (max-width :399px){
+    header{
+        background-color: rgb(146, 127, 255);
+    }
+}
+@media screen and (max-width :320px){
+    header{
+        background-color: rgb(171, 93, 165);
+    }
+}
