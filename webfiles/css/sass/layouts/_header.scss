@@ -3,6 +3,11 @@
 @use '../base/_typographies';
 @use '../components/_navbar';
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 img#presentation{
     position: absolute;
     top: 0;
@@ -22,21 +27,48 @@ header{
     section{
         max-width: 550px;
     }
+    
+    .hidden-div{
+        display: none;
+    }
 
-}
-
-
-@media screen and (max-width :1024px){
-    header{
-        background-color: aquamarine;
+    .open{
+        display: block;
+        position: absolute;
+        background-color: cadetblue;
+        right: 0;
+        top: 0 ;
+        text-transform: capitalize;
+        li{
+            border: black solid 2px;
+            padding: 10px 0;
+            text-align: center;
+        }
+        a:hover{
+            color: rgb(20, 58, 20);
+            font-weight: bolder;
+            background-color: chocolate;
+        }
     }
 }
+
+
+
+
+
+//@media screen and (max-width :1024px){
+    
+
+   
 @media screen and (max-width :768px){
     header{
-        background-color: rgb(12, 74, 53);
+        div{
+            background-color: aqua;
+            margin-top:300px;
+        }
     }
 }
-@media screen and (max-width :399px){
+@media screen and (max-width :499px){
     header{
         background-color: rgb(146, 127, 255);
     }
